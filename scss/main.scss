@@ -29,7 +29,7 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2 rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    background: rgba(darken($primary-color, 30), 0.5);
   }
 }
 
@@ -58,6 +58,7 @@ main {
 
     a {
       padding: 0.4rem;
+      color: black;
 
       &:hover {
         color: $secondary-color;
