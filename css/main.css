@@ -128,7 +128,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2 rem 1rem;
-    background: rgba(255, 255, 255, 0.5); }
+    background: rgba(179, 179, 179, 0.5); }
 
 a {
   color: #fff;
@@ -148,7 +148,8 @@ main {
   main .icons {
     margin-top: 1rem; }
     main .icons a {
-      padding: 0.4rem; }
+      padding: 0.4rem;
+      color: black; }
       main .icons a:hover {
         color: #00acee;
         transition: all 0.5s ease-out; }
@@ -278,5 +279,12 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
+  main {
+    align-items: center;
+    text-align: center;
+    height: 20vh; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
   .projects {
     grid-template-columns: 1fr; } }
