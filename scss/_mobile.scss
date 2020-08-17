@@ -67,6 +67,16 @@
 
 // Smartphones
 @include mediaSm {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+      margin-top: 20vh;
+    }
+  }
   .projects {
     grid-template-columns: 1fr;
   }
