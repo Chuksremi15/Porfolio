@@ -1,5 +1,4 @@
 // Menu Button
-
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -16,7 +15,7 @@
     @include easeOut;
   }
 
-  // Rotate Into x with menu Lines
+  // Rotate Into X With Menu Lines
   &.close {
     transform: rotate(180deg);
 
@@ -30,8 +29,8 @@
       &:nth-child(2) {
         opacity: 0;
       }
-      // Line 3 - Rotate
 
+      // Line 3 - Rotate
       &:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
       }
@@ -72,19 +71,19 @@
     @include easeOut;
 
     &.show {
-      // slide from the Top
+      // Slide in from top
       transform: translate3d(0, 0, 0);
     }
   }
 
-  // Branding side
+  // Branding Side
   &-branding {
     background: $primary-color;
-    transform: translate(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
     @include easeOut;
 
     &.show {
-      // slide from bottom
+      // Slide in from bottom
       transform: translate3d(0, 0, 0);
     }
 
@@ -92,7 +91,6 @@
       width: 250px;
       height: 250px;
       background: url('../img/profile.jpg');
-
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
@@ -103,7 +101,7 @@
     @include easeOut;
 
     &.show {
-      // slide in from right
+      // Slide in from right
       transform: translate3d(0, 0, 0);
     }
 
@@ -124,13 +122,15 @@
     @include easeOut;
 
     &:hover {
-      color: $secondary-color;
+      color: green;
+      font-size: 40px;
     }
   }
 }
 
+// Delay each nav item slide by 0.1s
 @for $x from 1 through 4 {
-  .nav-item :nth-child(#{$x}) {
+  .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
   }
 }

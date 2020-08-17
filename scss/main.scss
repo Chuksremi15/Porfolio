@@ -28,8 +28,8 @@ h3 {
 
   &.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2 rem 1rem;
-    background: rgba(darken($primary-color, 30), 0.5);
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
   }
 }
 
@@ -58,11 +58,10 @@ main {
 
     a {
       padding: 0.4rem;
-      color: black;
+      @include easeOut;
 
       &:hover {
         color: $secondary-color;
-        @include easeOut();
       }
     }
   }
@@ -108,14 +107,13 @@ main {
   }
 
   .job {
-    background: darken($primary-color, 5);
+    background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
 }
 
 // Work/Projects
-
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -133,7 +131,7 @@ main {
   }
 }
 
-//contact Page
+// Contact Page
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -143,7 +141,7 @@ main {
 
   div {
     font-size: 2rem;
-    border: 3px rgb(126, 123, 123) solid;
+    border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut;
@@ -168,7 +166,6 @@ main {
   &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
-    @include easeOut;
   }
 }
 
@@ -180,7 +177,7 @@ main {
 
 .btn-light {
   @extend .btn;
-  background: darken($primary-color, 20);
+  background: lighten($primary-color, 50);
   color: #333;
 }
 
