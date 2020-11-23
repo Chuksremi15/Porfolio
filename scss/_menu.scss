@@ -43,7 +43,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 1;
   visibility: hidden;
 
   &.show {
@@ -122,8 +122,8 @@
     @include easeOut;
 
     &:hover {
-      color: green;
-      font-size: 40px;
+      color: $secondary-color;
+      font-size: 32px;
     }
   }
 }

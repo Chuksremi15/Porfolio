@@ -99,13 +99,13 @@
 
     div {
       font-size: 1.5rem;
-      border: 3px #fff solid;
+      // border: 3px #fff solid;
       padding: 0.25rem 0.5rem;
       margin-bottom: 2rem;
       @include easeOut;
 
       &:hover {
-        padding: 1rem 1rem;
+        padding: 0.3rem 0.6rem;
       }
     }
   }
